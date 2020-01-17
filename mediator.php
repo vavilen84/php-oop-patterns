@@ -1,8 +1,5 @@
 <?php
-
-/**
- * Mediator
- */
+namespace Patterns\Mediator;
 
 const CALL_A = 1;
 const CALL_B = 2;

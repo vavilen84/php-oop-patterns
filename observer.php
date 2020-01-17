@@ -1,5 +1,7 @@
 <?php
 
+namespace Patterns\Observer;
+
 class ObserverA implements SplObserver
 {
     public function update(SplSubject $subject)

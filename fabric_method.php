@@ -1,4 +1,5 @@
 <?php
+namespace Patterns\FabricMethod;
 
 const TYPE_A = 1;
 const TYPE_B = 2;
