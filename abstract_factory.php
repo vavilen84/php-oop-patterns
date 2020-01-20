@@ -2,7 +2,11 @@
 
 namespace Patterns\AbstractFactory;
 
-interface Product
+interface ProductA
+{
+}
+
+interface ProductB
 {
 }
 
@@ -16,19 +20,19 @@ class B implements Product
 
 interface AbstractFactory
 {
-    public function createProductA(): Product;
+    public function createProductA(): ProductA;
 
-    public function createProductB(): Product;
+    public function createProductB(): ProductB;
 }
 
 class ConcreteFactory implements AbstractFactory
 {
-    public function createProductA(): Product
+    public function createProductA(): ProductA
     {
         return new A();
     }
 
-    public function createProductB(): Product
+    public function createProductB(): ProductB
     {
         return new B();
     }
